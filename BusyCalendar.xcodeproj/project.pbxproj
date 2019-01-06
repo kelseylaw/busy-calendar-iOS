@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701720B071DB82CE826CE022 /* Pods_BusyCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEDB1B20CF7F254C58E1244 /* Pods_BusyCalendar.framework */; };
 		DF6B3A651F648E92009471E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6B3A641F648E92009471E6 /* AppDelegate.swift */; };
 		DF6B3A671F648E92009471E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6B3A661F648E92009471E6 /* ViewController.swift */; };
 		DF6B3A6A1F648E92009471E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6B3A681F648E92009471E6 /* Main.storyboard */; };
 		DF6B3A6C1F648E92009471E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6B3A6B1F648E92009471E6 /* Assets.xcassets */; };
 		DF6B3A6F1F648E92009471E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6B3A6D1F648E92009471E6 /* LaunchScreen.storyboard */; };
 		DF6B3A7A1F648E92009471E6 /* BusyCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6B3A791F648E92009471E6 /* BusyCalendarTests.swift */; };
+		DF6B3A871F64925C009471E6 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6B3A861F64925C009471E6 /* DateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2171C15391E6357C169EDF72 /* Pods-BusyCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusyCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusyCalendar/Pods-BusyCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		CAEDB1B20CF7F254C58E1244 /* Pods_BusyCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusyCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6B3A611F648E92009471E6 /* BusyCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusyCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6B3A641F648E92009471E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6B3A661F648E92009471E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		DF6B3A751F648E92009471E6 /* BusyCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusyCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6B3A791F648E92009471E6 /* BusyCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyCalendarTests.swift; sourceTree = "<group>"; };
 		DF6B3A7B1F648E92009471E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6B3A861F64925C009471E6 /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		FC121F19AB990BB3D1BFC463 /* Pods-BusyCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusyCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusyCalendar/Pods-BusyCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701720B071DB82CE826CE022 /* Pods_BusyCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +63,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD9A7F68C92BC1EEA2CC018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAEDB1B20CF7F254C58E1244 /* Pods_BusyCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D1D70C8077AC1D704C26F7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC121F19AB990BB3D1BFC463 /* Pods-BusyCalendar.debug.xcconfig */,
+				2171C15391E6357C169EDF72 /* Pods-BusyCalendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF6B3A581F648E92009471E6 = {
 			isa = PBXGroup;
 			children = (
 				DF6B3A631F648E92009471E6 /* BusyCalendar */,
 				DF6B3A781F648E92009471E6 /* BusyCalendarTests */,
 				DF6B3A621F648E92009471E6 /* Products */,
+				9D1D70C8077AC1D704C26F7C /* Pods */,
+				1CD9A7F68C92BC1EEA2CC018 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +106,7 @@
 				DF6B3A641F648E92009471E6 /* AppDelegate.swift */,
 				DF6B3A661F648E92009471E6 /* ViewController.swift */,
 				DF6B3A681F648E92009471E6 /* Main.storyboard */,
+				DF6B3A861F64925C009471E6 /* DateCell.swift */,
 				DF6B3A6B1F648E92009471E6 /* Assets.xcassets */,
 				DF6B3A6D1F648E92009471E6 /* LaunchScreen.storyboard */,
 				DF6B3A701F648E92009471E6 /* Info.plist */,
@@ -103,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF6B3A7E1F648E92009471E6 /* Build configuration list for PBXNativeTarget "BusyCalendar" */;
 			buildPhases = (
+				857F1A43AB999008C3B1E144 /* [CP] Check Pods Manifest.lock */,
 				DF6B3A5D1F648E92009471E6 /* Sources */,
 				DF6B3A5E1F648E92009471E6 /* Frameworks */,
 				DF6B3A5F1F648E92009471E6 /* Resources */,
+				0CCD354875459918563EF93D /* [CP] Embed Pods Frameworks */,
+				4C0DB5E1322C72AC3DF9069A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,12 +224,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CCD354875459918563EF93D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BusyCalendar/Pods-BusyCalendar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusyCalendar/Pods-BusyCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C0DB5E1322C72AC3DF9069A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusyCalendar/Pods-BusyCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		857F1A43AB999008C3B1E144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusyCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF6B3A5D1F648E92009471E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DF6B3A671F648E92009471E6 /* ViewController.swift in Sources */,
+				DF6B3A871F64925C009471E6 /* DateCell.swift in Sources */,
 				DF6B3A651F648E92009471E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +424,7 @@
 		};
 		DF6B3A7F1F648E92009471E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC121F19AB990BB3D1BFC463 /* Pods-BusyCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusyCalendar/Info.plist;
@@ -351,6 +437,7 @@
 		};
 		DF6B3A801F648E92009471E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2171C15391E6357C169EDF72 /* Pods-BusyCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusyCalendar/Info.plist;
@@ -408,6 +495,7 @@
 				DF6B3A801F648E92009471E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF6B3A811F648E92009471E6 /* Build configuration list for PBXNativeTarget "BusyCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +504,7 @@
 				DF6B3A831F648E92009471E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
